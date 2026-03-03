@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
                 <h2 class="text-xl font-bold mb-6 italic uppercase tracking-wider text-gray-800">Edit User: {{ $user->name }}</h2>
 
-                <form action="{{ route('adminزupdate', $user->id) }}" method="POST">
+                <form action="{{ route('admin.update', $user->id) }}" method="POST">
                     @csrf
                     @method('PATCH')
 
